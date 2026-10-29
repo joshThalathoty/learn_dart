@@ -4,6 +4,11 @@ void main() {
   runApp(const MyApp());
 }
 
+Future<int>  handleCounter(int a){
+  Duration d = Duration(seconds: 1);
+  return Future.delayed((d),  () {return 0;}); //return 0?
+} 
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -67,6 +72,15 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
+  void _alternateCounter(){
+    setState(()  async {
+
+      _counter++;
+      _counter = await handleCounter(_counter);
+
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     // This method is rerun every time setState is called, for instance as done
@@ -114,6 +128,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
+        // onPressed: _alternateCounter,
         tooltip: 'Increment',
         child: const Icon(Icons.add),
       ),
