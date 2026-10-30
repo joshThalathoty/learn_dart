@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "928991958859",
+    "project_id": "learn-dart-thalathoty",
+    "storage_bucket": "learn-dart-thalathoty.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:928991958859:android:2505fff55ddbbc27e67ace",
+        "android_client_info": {
+          "package_name": "com.example.learn_dart"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjCC2dPOuct96C-yttpaRdDXon8JiA7BQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
